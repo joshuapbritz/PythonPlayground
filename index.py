@@ -139,20 +139,39 @@
 
 # print(contains_dog('My dog ran away'))
 
+# def pig_latin(string: str):
+#     string = string.lower()
+#     pig_latin_string = []
 
-def pig_latin(string: str):
-    string = string.lower()
-    pig_latin_string = []
+#     for word in string.split():
+#         is_vowel = not word[0] in ['a', 'e', 'i', 'o', 'u']
 
-    for word in string.split():
-        is_vowel = not word[0] in ['a', 'e', 'i', 'o', 'u']
+#         if is_vowel:
+#             pig_latin_string.append(f'{word[1:]}{word[0]}ay')
+#         else:
+#             pig_latin_string.append(f'{word}ay')
 
-        if is_vowel:
-            pig_latin_string.append(f'{word[1:]}{word[0]}ay')
-        else:
-            pig_latin_string.append(f'{word}ay')
-            
-    return ' '.join(pig_latin_string)
+#     return ' '.join(pig_latin_string)
 
+# print(pig_latin(input('Give me a sentence: ')))
 
-print(pig_latin(input('Give me a sentence: ')))
+# def is_even(a, b):
+#     return a < b
+
+# def myfunc(*values):
+#     print(set(values))
+#     print(sum(values) * 0.5)
+
+# myfunc(12, 27, 13, 43, 55, 61)
+
+# def myfunc_kwarg(**values):
+#     # print(sum(values) * 0.5)
+#     print(values)
+
+# myfunc_kwarg(fruit = 'apple')
+
+# def funcname(*args, **kwargs):
+#     print(kwargs)
+#     print(args)
+
+# funcname(1, 2, 3, 4, 5, 6, 7, name='Joshua', surname='Britz')
