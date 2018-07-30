@@ -99,7 +99,6 @@ def start_game():
                 PLAYER_CHAR_MAP[CURRENT_PLAYER]['moves'].append(player_move)
 
                 player_has_won = check_winner()
-                GAME_HAS_WINNER = True
 
                 if not player_has_won:
                     if CURRENT_PLAYER == 1:
