@@ -51,13 +51,13 @@
 # def ran_check(num, low, high):
 #     return num <= high and num >= low
 
-from collections import Counter
+# from collections import Counter
 
-def up_low(s):
-    t = tuple(Counter(s).elements())
-    u = list(filter(lambda v: v.isupper(), t))
-    l = list(filter(lambda v: v.islower(), t))
-    print(f'Uppercase: {len(u)}')
-    print(f'Lowercase: {len(l)}')
+# def up_low(s):
+#     t = tuple(Counter(s).elements())
+#     u = list(filter(lambda v: v.isupper(), t))
+#     l = list(filter(lambda v: v.islower(), t))
+#     print(f'Uppercase: {len(u)}')
+#     print(f'Lowercase: {len(l)}')
 
-up_low('Hello World')
+# up_low('Hello World')

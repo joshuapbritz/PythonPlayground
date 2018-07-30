@@ -175,3 +175,10 @@
 #     print(args)
 
 # funcname(1, 2, 3, 4, 5, 6, 7, name='Joshua', surname='Britz')
+
+# with open('../../TheThanosButton/firebase.json', 'r') as file:
+#     result = json.loads(file.read())
+#     print(result['hosting']['ignore'])
+
+# import webbrowser
+# webbrowser.open(url = 'https://joshbritz.co?python=True')
