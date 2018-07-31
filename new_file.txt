@@ -1,5 +1,0 @@
-Name: Joshua Britz
-Age: 20
-Country: South Africa
-Job Title: UI Developer
-Skills: JavaScript, C#, Python, HTML, SCSS
