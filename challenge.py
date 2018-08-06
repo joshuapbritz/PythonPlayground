@@ -55,7 +55,11 @@ while working:
         print(result)
         print('\n\n\n')
     elif action == 2:
-        pass
+        amt = int(input('How much would you like to deposit?: '))
+        result = my_account.deposit(amt)
+        print('\n\n\n')
+        print(result)
+        print('\n\n\n')
     elif action == 3:
         print(f'\n\n\nYour balance is R{my_account.account_balance}.00\n\n\n')
     elif action == 4:
@@ -63,3 +67,5 @@ while working:
         working = False
     else:
         continue
+
+print(my_account)
