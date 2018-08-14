@@ -8,6 +8,7 @@ class Line():
     '''
     A Class for working with lines
     '''
+
     def __init__(self, coords_1, coords_2):
         self.coords_1 = coords_1
         self.coords_2 = coords_2
@@ -67,3 +68,58 @@ CYLINDER = Cylinder(2, 3)
 
 print(CYLINDER.volume())
 print(CYLINDER.surface_area())
+
+
+class Circle():
+    '''
+    A Class for working with circles
+    '''
+
+    def __init__(self, radius):
+        self.radius = radius
+
+    def get_circumference(self):
+        '''
+        Get the circumference of the circle
+        '''
+        return round(2 * pi * self.radius, 2)
+
+    def get_area(self):
+        '''
+        Get the area of the circle
+        '''
+        return round(pi * (self.radius * self.radius), 2)
+
+    def get_diameter(self):
+        '''
+        Get the diameter of the circle
+        '''
+        return self.radius * 2
+
+
+CIRCLE = Circle(100)
+
+print(CIRCLE.get_circumference())
+print(CIRCLE.get_area())
+print(CIRCLE.get_diameter())
+
+
+class Square():
+    '''
+    A Class for working with squares
+    '''
+
+    def __init__(self, width, height):
+        self.height = height
+        self.width = width
+
+    def get_area(self):
+        return self.width * self.height
+
+    def get_perimeter(self):
+        return (self.width * 2) + (self.height * 2)
+
+SQUARE = Square(200, 300)
+
+print(SQUARE.get_area())
+print(SQUARE.get_perimeter())
