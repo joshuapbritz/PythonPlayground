@@ -31,15 +31,6 @@ class Line():
         return round(self.diffs.get('y') / self.diffs.get('x'), 2)
 
 
-C1 = (1, 8)
-C2 = (8, 10)
-
-LINE = Line(C1, C2)
-
-print(LINE.slope())
-print(LINE.distance())
-
-
 ## Cylinder
 class Cylinder():
     '''
@@ -62,12 +53,6 @@ class Cylinder():
         '''
         return round(((2 * pi) * self.radius * self.height) +
                      (2 * pi * (self.radius**2)), 2)
-
-
-CYLINDER = Cylinder(2, 3)
-
-print(CYLINDER.volume())
-print(CYLINDER.surface_area())
 
 
 class Circle():
@@ -97,13 +82,6 @@ class Circle():
         return self.radius * 2
 
 
-CIRCLE = Circle(100)
-
-print(CIRCLE.get_circumference())
-print(CIRCLE.get_area())
-print(CIRCLE.get_diameter())
-
-
 class Square():
     '''
     A Class for working with squares
@@ -118,8 +96,3 @@ class Square():
 
     def get_perimeter(self):
         return (self.width * 2) + (self.height * 2)
-
-SQUARE = Square(200, 300)
-
-print(SQUARE.get_area())
-print(SQUARE.get_perimeter())
