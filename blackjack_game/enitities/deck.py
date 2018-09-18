@@ -46,7 +46,15 @@ class Deck:
             self._do_shuffle()
 
     def deal(self):
-        pass
+        return {
+            'player': (self.hit(), self.hit()),
+            'ai': (self.hit(), self.hit()),
+        }
+
+    def hit(self):
+        card = self.cards[-1]
+        del self.cards[-1]
+        return card
 
     def _do_shuffle(self):
         '''
