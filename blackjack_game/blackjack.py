@@ -39,7 +39,7 @@ class Game():
                 if self.player._total_card_value <= 21:
                     pass
                 else:
-                    print('You busted')
+                    print(f'BUST! Your total was {self.player._total_card_value}')
                     self.pool.reset()
                     break
             elif player_move == '2':
@@ -50,7 +50,13 @@ class Game():
                 continue
 
     def ai_play(self):
-        pass
+        playing = True
+        while playing:
+            new_card = self.deck.hit()
+            self.ai.add_card(new_card)
+            break
+
+            
 
 
 game = Game()
