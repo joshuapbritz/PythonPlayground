@@ -20,6 +20,7 @@ values = {
     'Ace': 11
 }
 
+
 class Card():
     def __init__(self, suit, rank, value):
         self.suit = suit.capitalize()
@@ -47,8 +48,8 @@ class Deck:
 
     def deal(self):
         return {
-            'player': (self.hit(), self.hit()),
-            'ai': (self.hit(), self.hit()),
+            'player': [self.hit(), self.hit()],
+            'ai': [self.hit(), self.hit()],
         }
 
     def hit(self):
