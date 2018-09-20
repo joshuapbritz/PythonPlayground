@@ -4,6 +4,9 @@ class Pool():
 
     def add(self, value):
         self.bet_value = value
+
+    def get(self):
+        return self.bet_value * 2
     
     def reset(self):
         self.bet_value = 0
