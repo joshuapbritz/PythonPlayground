@@ -47,7 +47,6 @@
 
 # print(surfacearea(10))
 
-
 # def ran_check(num, low, high):
 #     return num <= high and num >= low
 
@@ -61,3 +60,10 @@
 #     print(f'Lowercase: {len(l)}')
 
 # up_low('Hello World')
+
+
+def _calculate(x, y, z):
+    return (x / y) / (y / z)
+
+
+print(_calculate(10, 20, 30))
