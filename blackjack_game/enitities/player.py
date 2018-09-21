@@ -66,5 +66,4 @@ class AI(Player):
             map(lambda c: str(c) + ' (' + str(c.value) + ')', self._cards))
         cards[-1] = '[SECRET CARD]'
         print('THE DEALER CARDS ARE:\n' + ',\n'.join(cards) + '\n')
-
-    
+        

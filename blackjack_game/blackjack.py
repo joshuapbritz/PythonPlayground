@@ -48,7 +48,7 @@ class Game():
                 self.player._player_chips += self.pool.get()
                 self.pool.reset()
                 print(
-                    f'Dealer has bust. You win. You have {self.player._player_chips} chips"'
+                    f'Dealer has bust. You win. You have {self.player._player_chips} chips'
                 )
                 break
             elif value >= 17 and value <= 21:
@@ -102,6 +102,7 @@ class Game():
                 continue
             else:
                 print('Thank you for playing')
+                self.playing = False
 
 
 game = Game()
