@@ -1,6 +1,5 @@
 import itertools
 
-
 class Player():
     def __init__(self, hand):
         self._cards = hand
@@ -66,4 +65,3 @@ class AI(Player):
             map(lambda c: str(c) + ' (' + str(c.value) + ')', self._cards))
         cards[-1] = '[SECRET CARD]'
         print('THE DEALER CARDS ARE:\n' + ',\n'.join(cards) + '\n')
-        
