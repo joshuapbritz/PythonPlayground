@@ -182,3 +182,9 @@
 
 # import webbrowser
 # webbrowser.open(url = 'https://joshbritz.co?python=True')
+
+import re
+
+p = re.compile('ab*').findall('joshua paul britz')
+
+print(p)
